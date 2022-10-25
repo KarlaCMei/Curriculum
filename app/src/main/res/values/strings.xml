@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Curriculum</string>
+
+    <!--
+    Strings para la pantalla activity main
+    -->
+    <string name="text_title_photo">FOTO</string>
+</resources>
