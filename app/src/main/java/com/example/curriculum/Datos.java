@@ -21,67 +21,67 @@ public class Datos extends AppCompatActivity {
 
     public void recibirDatos(){
         Bundle obtenerDatos = getIntent().getExtras();
-        if(obtenerDatos!=null){
-            //if(obtenerDatos.containsKey(Constants.Datos.USER_NAME)){
-            if(obtenerDatos.containsKey("nombre")){
-                String obtenerNombre= obtenerDatos.getString("nombre");
+       if(obtenerDatos!=null){
+            if(obtenerDatos.containsKey(Constants.USER_NAME)){
+                String obtenerNombre= obtenerDatos.getString(Constants.USER_NAME);
                 binding.textViewNombre.setText("NOMBRE: " + obtenerNombre);
             }
 
-            if(obtenerDatos.containsKey("especialidad")){
-                String obtenerEspecialidad = obtenerDatos.getString("especialidad");
+            if(obtenerDatos.containsKey(Constants.USER_SPECIALTY)){
+                String obtenerEspecialidad = obtenerDatos.getString(Constants.USER_SPECIALTY);
                 binding.textViewEspecialidad.setText("ESPECIALIDAD: " + obtenerEspecialidad);
             }
 
-            if(obtenerDatos.containsKey("nacionalidad")){
-                String obtenerNacionalidad = obtenerDatos.getString("nacionalidad");
+            if(obtenerDatos.containsKey(Constants.USER_NATIONALITY)){
+                String obtenerNacionalidad = obtenerDatos.getString(Constants.USER_NATIONALITY);
                 binding.textViewNacionalidad.setText("NACIONALIDAD: " + obtenerNacionalidad);
             }
 
-            if(obtenerDatos.containsKey("edad")){
-                String obtenerEdad = obtenerDatos.getString("edad");
+            if(obtenerDatos.containsKey(Constants.USER_AGE)){
+                String obtenerEdad = obtenerDatos.getString(Constants.USER_AGE);
                 binding.textViewEdad.setText("EDAD: " + obtenerEdad);
             }
 
-            if(obtenerDatos.containsKey("telefono")){
-                String obtenerTelefono = obtenerDatos.getString("telefono");
+            if(obtenerDatos.containsKey(Constants.USER_PHONE)){
+                String obtenerTelefono = obtenerDatos.getString(Constants.USER_PHONE);
                 binding.textViewNumeroTelefono.setText("NUM. TELEFONO" + obtenerTelefono);
             }
 
-            if(obtenerDatos.containsKey("direccion")){
-                String obtenerDireccion = obtenerDatos.getString("direccion");
+            if(obtenerDatos.containsKey(Constants.USER_DIRECCTION)){
+                String obtenerDireccion = obtenerDatos.getString(Constants.USER_DIRECCTION);
                 binding.textViewDireccion.setText("DIRECCION" + obtenerDireccion);
             }
 
-            if(obtenerDatos.containsKey("objetivo")){
-                String obtenerObjetivo = obtenerDatos.getString("objetivo");
+            if(obtenerDatos.containsKey(Constants.USER_OBJECTIVE)){
+                String obtenerObjetivo = obtenerDatos.getString(Constants.USER_OBJECTIVE);
                 binding.textViewObjetivoProfecional.setText("OBJETIVO PROFECIONAL" + obtenerObjetivo);
             }
 
-            if(obtenerDatos.containsKey("hobbies")){
-                String obtenerHobbies = obtenerDatos.getString("hobbies");
+            if(obtenerDatos.containsKey(Constants.USER_HOBBIES)){
+                String obtenerHobbies = obtenerDatos.getString(Constants.USER_HOBBIES);
                 binding.textViewHobbies.setText("HOBBIES: " + obtenerHobbies);
             }
 
-            if(obtenerDatos.containsKey("certificacion")){
-                String obtenerCertificacion = obtenerDatos.getString("certificacion");
+            if(obtenerDatos.containsKey(Constants.USER_CERTIFICATION)){
+                String obtenerCertificacion = obtenerDatos.getString(Constants.USER_CERTIFICATION);
                 binding.textViewCertificacion.setText("CERTIFICACION: " + obtenerCertificacion);
             }
 
-            if(obtenerDatos.containsKey("escuela")){
-                String obtenerEscuela = obtenerDatos.getString("escuela");
+            if(obtenerDatos.containsKey(Constants.USER_SCHOOL)){
+                String obtenerEscuela = obtenerDatos.getString(Constants.USER_SCHOOL);
                 binding.textViewEscuela.setText("DONDE ESTUDIO:" + obtenerEscuela);
             }
 
-            if(obtenerDatos.containsKey("trabajo")){
-                String obtnerTrabajo = obtenerDatos.getString("trabajo");
+            if(obtenerDatos.containsKey(Constants.USER_WORK)){
+                String obtnerTrabajo = obtenerDatos.getString(Constants.USER_WORK);
                 binding.textViewUltimoTrabajo.setText("ULTIMO TRABAJO" + obtnerTrabajo);
             }
 
-            if(obtenerDatos.containsKey("experiencia")){
-                String obtenerExperiencia = obtenerDatos.getString("experiencia");
+            if(obtenerDatos.containsKey(Constants.USER_EXPERIENCIE)){
+                String obtenerExperiencia = obtenerDatos.getString(Constants.USER_EXPERIENCIE);
                 binding.textViewExperiencia.setText("EXPERIENCIA LABORAL:" + obtenerExperiencia);
             }
+
 
             //Otras validaciones
 

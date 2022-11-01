@@ -16,7 +16,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
+            android:padding="@dimen/nombre_dimen"
             android:background="#D2BBAB"
             tools:context=".MainActivity">
 
@@ -29,7 +29,7 @@
                 android:text="@string/text_title_photo"
                 android:background="@drawable/esquina_redondeada"
                 android:textColor="@color/white"
-                android:textSize="25sp"
+                android:textSize="@dimen/title_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -50,9 +50,9 @@
                 android:background="@drawable/esquina_redondeada"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:text="DATOS PERSONALES"
+                android:text="@string/text_title_data"
                 android:textColor="@color/white"
-                android:textSize="25sp"
+                android:textSize="@dimen/title_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/icono_foto" />
@@ -116,9 +116,9 @@
                 android:background="@drawable/esquina_redondeada"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:text="INFORMACION DE CONTACTO"
+                android:text="@string/text_title_information"
                 android:textColor="@color/white"
-                android:textSize="25sp"
+                android:textSize="@dimen/title_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editText_edad"
@@ -155,9 +155,9 @@
                 android:background="@drawable/esquina_redondeada"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:text="INFORMACION ADICIONAL"
+                android:text="@string/text_title_additional_information"
                 android:textColor="@color/white"
-                android:textSize="25sp"
+                android:textSize="@dimen/title_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editText_direccion"
@@ -196,9 +196,9 @@
                 android:background="@drawable/esquina_redondeada"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:text="EXPERIENCIA EN LOS SIGUIENTES PROGRAMAS"
+                android:text="@string/text_title_experience"
                 android:textColor="@color/white"
-                android:textSize="25sp"
+                android:textSize="@dimen/title_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editText_hobbies"
@@ -211,7 +211,7 @@
                 android:buttonTint="#2E1705"
                 android:text="Word"
                 android:textColor="#95490E"
-                android:textSize="20dp"
+                android:textSize="@dimen/description_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/experiencia" />
@@ -223,7 +223,7 @@
                 android:buttonTint="#2E1705"
                 android:text="Excel"
                 android:textColor="#95490E"
-                android:textSize="20dp"
+                android:textSize="@dimen/description_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/check_Word" />
@@ -269,9 +269,9 @@
                 android:background="@drawable/esquina_redondeada"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:text="CAPACIDAD PARA LAS SIGUIENTES APTITUDES"
+                android:text="@string/text_title_ability"
                 android:textColor="@color/white"
-                android:textSize="25sp"
+                android:textSize="@dimen/title_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/radioBtn_bases_de_datos"
@@ -344,9 +344,9 @@
                 android:background="@drawable/esquina_redondeada"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:text="ANTECEDENTES LAVORALES"
+                android:text="@string/text_title_employment_history"
                 android:textColor="@color/white"
-                android:textSize="25sp"
+                android:textSize="@dimen/title_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/radioBtn_analizar"
@@ -419,7 +419,7 @@
                 android:textColor="@color/white"
                 android:backgroundTint="#472D2D"
                 app:layout_constraintTop_toBottomOf="@+id/editText_experiencia"
-                android:text="GUARDAR" />
+                android:text="@string/text_title_save" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean checkBoxCompeñerismo;
     private boolean checkBoxCapacidadAnalitica;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,41 +39,40 @@ public class MainActivity extends AppCompatActivity {
 
                 String nombre = binding.editTextNombre.getText().toString();
                 //intent.putExtra(Constants.ConectionRetrofit.URL, nombre);
-                intent.putExtra("nombre", nombre);
-
+                intent.putExtra(Constants.USER_NAME, nombre);
 
                 String especialidad = binding.editTextEspecialidad.getText().toString();
-                intent.putExtra("especialidad", especialidad);
+                intent.putExtra(Constants.USER_SPECIALTY, especialidad);
 
                 String nacionalidad = binding.editTextNacionalidad.getText().toString();
-                intent.putExtra("nacionalidad", nacionalidad);
+                intent.putExtra(Constants.USER_NATIONALITY, nacionalidad);
 
                 String edad = binding.editTextEdad.getText().toString();
-                intent.putExtra("edad", edad);
+                intent.putExtra(Constants.USER_AGE, edad);
 
                 String numeroDeTelefono = binding.editTextNumeroTelefono.getText().toString();
-                intent.putExtra("telefono", numeroDeTelefono);
+                intent.putExtra(Constants.USER_PHONE, numeroDeTelefono);
 
                 String direccion = binding.editTextDireccion.getText().toString();
-                intent.putExtra("direccion", direccion);
+                intent.putExtra(Constants.USER_DIRECCTION, direccion);
 
                 String objetivo = binding.editTextObjetivoProfecional.getText().toString();
-                intent.putExtra("objetivo", objetivo);
+                intent.putExtra(Constants.USER_OBJECTIVE, objetivo);
 
                 String hobbies = binding.editTextHobbies.getText().toString();
-                intent.putExtra("hobbies", hobbies);
+                intent.putExtra(Constants.USER_HOBBIES, hobbies);
 
                 String certificacion = binding.editTextCertificacion.getText().toString();
-                intent.putExtra("certificacion", certificacion);
+                intent.putExtra(Constants.USER_CERTIFICATION, certificacion);
 
                 String escuela = binding.editTextEscuela.getText().toString();
-                intent.putExtra("escuela", escuela);
+                intent.putExtra(Constants.USER_SCHOOL, escuela);
 
                 String ultimoTrabajo = binding.editTextUltimoTrabajo.getText().toString();
-                intent.putExtra("trabajo", ultimoTrabajo);
+                intent.putExtra(Constants.USER_WORK, ultimoTrabajo);
 
                 String experienciaLaboral = binding.editTextExperiencia.getText().toString();
-                intent.putExtra("experiencia", experienciaLaboral);
+                intent.putExtra(Constants.USER_EXPERIENCIE, experienciaLaboral);
 
 
                 intent.putExtra("word", radiobtnword);

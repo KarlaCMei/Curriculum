@@ -5,4 +5,13 @@
     Strings para la pantalla activity main
     -->
     <string name="text_title_photo">FOTO</string>
+    <string name="text_title_data">DATOS PERSONALES</string>
+    <string name="text_title_information">INFORMACION DE CONTACTO</string>
+    <string name="text_title_additional_information">INFORMACION ADICIONAL</string>
+    <string name="text_title_experience">EXPERIENCIA EN LOS SIGUIENTES PROGRAMAS</string>
+    <string name="text_title_ability">CAPACIDAD PARA LAS SIGUIENTES APTITUDES</string>
+    <string name="text_title_employment_history">ANTECEDENTES LAVORALES</string>
+    <string name="text_title_save">GUARDAR</string>
+
+
 </resources>
