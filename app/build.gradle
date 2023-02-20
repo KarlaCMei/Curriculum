@@ -1,8 +1,29 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+
+}
+
+def getProps(String propName) {
+    def propsFile = rootProject.file('local.properties')
+    if (propsFile.exists()) {
+        def props = new Properties()
+        props.load(new FileInputStream(propsFile))
+        return props[propName]
+    } else {
+        return "";
+    }
 }
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('/Users/mac/Documents/Curriculum.keystore')
+            storePassword 'CurriCulumm'
+            keyAlias 'ProyectoCurriculum'
+            keyPassword 'CurriCulumm'
+        }
+    }
     compileSdk 32
 
     defaultConfig {
@@ -16,11 +37,22 @@ android {
     }
 
     buildTypes {
+
+        debug{
+            buildConfigField "boolean", "DEBUG_TOAST_LOGS", "true"
+            manifestPlaceholders = [googleMapsApiKey: "${getProps("MAPS_API_KEY_DEBUG")}"]
+        }
+
         release {
+            buildConfigField "boolean", "DEBUG_TOAST_LOGS", "false"
+            signingConfig signingConfigs.release
+            manifestPlaceholders = [googleMapsApiKey: "${getProps("MAPS_API_KEY_RELEASE")}"]
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -37,6 +69,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
